@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button'
 import { Reveal } from '@/components/reveal'
 
 const DETAILS = [
-  { icon: Phone, label: 'Phone', value: '+27 11 234 5678' },
-  { icon: Mail, label: 'Email', value: 'hello@vachellia.co.za' },
+  { icon: Phone, label: 'Phone', value: '+27 72 866 6579' },
+  { icon: Mail, label: 'Email', value: 'vachelliapremiercleaning@outlook.com' },
   { icon: MapPin, label: 'Location', value: 'Sandton, Johannesburg' },
   { icon: Clock, label: 'Working Hours', value: 'Mon – Sat, 7am – 7pm' },
 ]
