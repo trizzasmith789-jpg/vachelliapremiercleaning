@@ -2,7 +2,7 @@
 
 import { motion } from 'motion/react'
 
-const WHATSAPP_NUMBER = '27112345678'
+const WHATSAPP_NUMBER = '27728666579'
 const MESSAGE = encodeURIComponent(
   "Hi Vachellia Premier Cleaning, I'd like to request a quote.",
 )
