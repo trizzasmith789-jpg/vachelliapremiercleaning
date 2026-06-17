@@ -1,37 +1,14 @@
 'use client'
 
-import { motion, useInView, useMotionValue, animate } from 'motion/react'
-import { useEffect, useRef, useState } from 'react'
+
 import Image from 'next/image'
 import { Reveal } from '@/components/reveal'
 
-const STATS = [
-  { value: 10, suffix: '', label: 'Years Experience' },
-]
 
-function Counter({ value, suffix }: { value: number; suffix: string }) {
-  const ref = useRef<HTMLSpanElement>(null)
-  const inView = useInView(ref, { once: true, margin: '-60px' })
-  const count = useMotionValue(0)
-  const [display, setDisplay] = useState(0)
+  
 
-  useEffect(() => {
-    if (!inView) return
-    const controls = animate(count, value, {
-      duration: 1.6,
-      ease: [0.22, 1, 0.36, 1],
-      onUpdate: (v) => setDisplay(Math.round(v)),
-    })
-    return controls.stop
-  }, [inView, value, count])
 
-  return (
-    <span ref={ref} className="font-serif text-4xl font-semibold sm:text-5xl">
-      {display}
-      {suffix}
-    </span>
-  )
-}
+
 
 export function AboutSection() {
   return (
@@ -77,25 +54,11 @@ export function AboutSection() {
               it&apos;s a better way of living.
             </p>
           </Reveal>
-
-          <div className="mt-10 flex gap-8 border-t border-border pt-10">
-            {STATS.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
-              >
-                <Counter value={stat.value} suffix={stat.suffix} />
-                <div className="mt-1 text-sm text-muted-foreground">
-                  {stat.label}
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
   )
 }
+
+
+
