@@ -123,23 +123,7 @@ export function Hero() {
             </a>
           </motion.div>
 
-          <motion.div
-            variants={item}
-            className="mt-12 flex items-center gap-8 border-t border-border pt-8"
-          >
-            {[
-              { n: '500+', l: 'Happy Clients' },
-              { n: '5', l: 'Years Experience' },
-              { n: '100%', l: 'Satisfaction' },
-            ].map((s) => (
-              <div key={s.l}>
-                <div className="font-serif text-2xl font-semibold">{s.n}</div>
-                <div className="text-xs text-muted-foreground">{s.l}</div>
-              </div>
-            ))}
-          </motion.div>
-        </motion.div>
-
+ 
         <motion.div
           initial={{ opacity: 0, scale: 1.04 }}
           animate={{ opacity: 1, scale: 1 }}
