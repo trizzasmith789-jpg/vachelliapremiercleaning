@@ -4,7 +4,7 @@ import { motion } from 'motion/react'
 
 const WHATSAPP_NUMBER = '27728666579'
 const MESSAGE = encodeURIComponent(
-  "Hi Vachellia Premier Cleaning, I'd like to request a quote.",
+  "Hi Vachellia Premier Cleaning Solutions,\n\nI would like to request a quote for cleaning services. Please contact me at your earliest convenience.\n\nThank you.",
 )
 
 export function WhatsappFloat() {
